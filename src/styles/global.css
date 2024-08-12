@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "ClashGrotesk";
+  src: url("./fonts/ClashGrotesk-Variable.ttf");
+}
+
+* {
+  font-family: "ClashGrotesk", "sans-serif";
+}
