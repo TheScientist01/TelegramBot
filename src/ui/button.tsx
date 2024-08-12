@@ -33,16 +33,16 @@ const buttonStyles = (isSizeableIcon: boolean) => {
     base: "",
     variants: {
       size: {
-        xs: `h-[49px] gap-x-0.5 px-3.5 text-[10px] font-bold uppercase ${
+        xs: `h-[40px] gap-x-0.5 px-3.5 text-[10px] font-bold uppercase ${
           !isSizeableIcon && "[&_svg]:size-3.5"
         }`,
-        sm: `h-[52px] gap-x-2 px-4 text-[12px] font-bold uppercase ${
+        sm: `h-[44px] gap-x-2 px-4 text-[12px] font-bold uppercase ${
           !isSizeableIcon && "[&_svg]:size-4"
         }`,
-        md: `h-[40px] gap-x-2.5 px-5 text-[16px] ${
+        md: `h-[49px] gap-x-2.5 px-5 text-[16px] ${
           !isSizeableIcon && "[&_svg]:size-5"
         }`,
-        lg: `h-[44px] gap-x-3 px-6 text-[14px] font-bold ${
+        lg: `h-[52px] gap-x-3 px-6 text-[14px] font-bold ${
           !isSizeableIcon && "[&_svg]:size-6"
         }`,
         xl: `h-[78px] gap-x-3.5 px-7 text-[14px] font-bold uppercase ${

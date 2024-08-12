@@ -13,6 +13,8 @@ import DefenseLevel from "src/components/defense-level";
 import Ufo from "src/assets/images/ufo.png";
 import Happy from "src/assets/images/avatars/happy.png";
 import { Defense } from "src/screens/defense";
+import Missions from "src/screens/missions";
+import Troops from "src/screens/troops";
 
 export default function MainPage() {
   const [user, setUser] = useState<any>(null);
@@ -21,6 +23,8 @@ export default function MainPage() {
   const pages = {
     home: <Home user={user} />,
     defense: <Defense />,
+    missions: <Missions />,
+    troops: <Troops />,
   };
 
   useEffect(() => {
@@ -28,10 +32,10 @@ export default function MainPage() {
     if (localUser) {
       setUser(JSON.parse(localUser));
     } else {
-      // localStorage.setItem(
-      //   "user",
-      //   JSON.stringify({ username: "Username", country: "canada" })
-      // );
+      localStorage.setItem(
+        "user",
+        JSON.stringify({ username: "Username", country: "canada" })
+      );
       // router.push("/auth");
     }
   }, []);

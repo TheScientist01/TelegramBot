@@ -47,9 +47,9 @@ export const variantColorRadiusStyles = tv({
     },
     color: {
       default: "",
-      primary: "",
-      secondary: "",
-      success: "",
+      primary: "bg-primary",
+      secondary: "bg-[#0bb4df]",
+      success: "bg-mainGreen",
       error: "",
     },
     isHovered: { true: "" },
@@ -68,22 +68,22 @@ export const variantColorRadiusStyles = tv({
     {
       variant: ["solid", "soft", "light", "bordered", "gradient"],
       color: "primary",
-      className: "bg-coral",
+      className: "bg-primary",
     },
     {
       variant: ["solid", "soft", "light", "bordered", "gradient"],
       color: "secondary",
-      className: "bg-sea",
+      className: "bg-[#0bb4df]",
     },
     {
       variant: ["solid", "soft", "light", "bordered", "gradient"],
       color: "success",
-      className: "bg-weed",
+      className: "bg-mainGray",
     },
     {
       variant: ["solid", "soft", "light", "bordered", "gradient"],
       color: "error",
-      className: "bg-fuzzy",
+      className: "bg-red-500",
     },
     // soft & light & bordered & faded & gradient
     {
@@ -170,7 +170,11 @@ export const variantColorRadiusStyles = tv({
     { variant: "light", isHovered: true, className: "bg-opacity-10" },
     { variant: "bordered", isHovered: true, className: "bg-opacity-10" },
     { variant: "faded", isHovered: true, className: "border-platinum" },
-    { variant: "gradient", isHovered: true, className: "[&_*]:text-black text-black bg-opacity-100 after:opacity-0" },
+    {
+      variant: "gradient",
+      isHovered: true,
+      className: "[&_*]:text-black text-black bg-opacity-100 after:opacity-0",
+    },
   ],
 });
 
